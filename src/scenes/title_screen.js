@@ -1,7 +1,9 @@
 import Phaser from "phaser";
 
 export default class titleScreen extends Phaser.Scene {
-  prelead() {}
+  preload() {
+    this.load.image("background", "Backgrounds/game_background_3. 2.png");
+  }
 
   create() {
     const screenCenterX = this.cameras.main.width / 2;
